@@ -1,0 +1,75 @@
+% Wzór dokumentu rezygnacji z Kościoła katolickiego dla tych,
+% którzy chcieliby przygotować pismo w LaTeX-u.
+% Opracowany na podstawie informacji ze strony https://apostazja.eu/.
+%
+% Pamiętaj, aby przygotować trzy egzemplarze,
+% ale podpisujesz je dopiero przy proboszczu w parafii zamieszkania.
+% Jeden egzemplarz otrzymujesz Ty, drugi zostaje w parafii,
+% trzeci kierowany jest do kurii i ona przekazuje informację parafii chrztu.
+% 
+% Jeśli treść samego pisma (w tym motywacja wystąpienia) Ci odpowiada,
+% wystarczy tylko podać dane (kilka kolejnych linii) i skompilować dokument.
+
+% nagłówek pisma - miejscowość i data
+\newcommand{\miejscowoscdata}{Toruń, 1 stycznia 2021 roku}
+
+% imię, drugie imię i nazwisko występującego/występującej
+\newcommand{\imie}{Jan}
+\newcommand{\drugieimie}{Paweł}
+\newcommand{\nazwisko}{Nowak}
+
+% data i parafia chrztu
+\newcommand{\datachrztu}{12 lipca 1991 roku}
+\newcommand{\parafiachrztu}{Parafia Św. Wawrzyńca w Łodzi}
+
+% parafia zamieszkania - ta, w której składasz dokument
+\newcommand{\parafiazamieszkania}{Parafia Św. Babisza w Katowicach}
+\newcommand{\parafiazamieszkaniaulicadom}{ul. Nowa 11}
+\newcommand{\parafiazamieszkaniakodmiasto}{12-123 Katowice}
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}    
+\usepackage{polski}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{flushright}
+\miejscowoscdata\\
+\end{flushright}
+~\\
+~\\
+\begin{flushleft}
+\textbf{Imię i nazwisko:} \imie~\drugieimie~\nazwisko\\
+\textbf{Data chrztu:} \datachrztu\\
+\textbf{Parafia chrztu:} \parafiachrztu\\
+~\\
+~\\
+\hspace{250pt}\parafiazamieszkania\\
+\hspace{250pt}\parafiazamieszkaniaulicadom\\
+\hspace{250pt}\parafiazamieszkaniakodmiasto\\
+~\\
+\end{flushleft}
+\begin{center}
+\section*{Rezygnacja z członkostwa w Kościele katolickim}
+\end{center}
+
+
+~\\
+Na podstawie art. 53 par. 1 i 2 Konstytucji Rzeczypospolitej Polskiej oraz Uchwały Konferencji Episkopatu Polski nr~20/370/2015 niniejszym rezygnuję z członkostwa w~Kościele rzymskokatolickim i proszę o dokonanie stosownej adnotacji w księdze ochrzczonych.\\
+~\\
+Członkostwo w Kościele jest niezgodne z moim światopoglądem. Decyzję tę podejmuję z~własnej i nieprzymuszonej woli. Znam konsekwencje z tym związane.\\
+
+~\\
+Otrzymują:\\
+- \parafiazamieszkania\\
+- \imie~\drugieimie~\nazwisko
+~\\
+~\\
+~\\
+~\\
+~\\
+data, pieczęć parafii i podpis proboszcza\hspace{100pt}podpis osoby rezygnującej
+\end{document}
